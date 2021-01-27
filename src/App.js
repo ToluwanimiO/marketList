@@ -26,10 +26,10 @@ function App() {
   }
   const submitMList =(e)=>{
     e.preventDefault();
-    let items = JSON.parse(localStorage.getItem("marketList"));
+    // let items = JSON.parse(localStorage.getItem("marketList"));
     let date= new Date;
     let currentDate = date.toLocaleDateString()
-    items.map(obj=>obj.date==currentDate?console.log('exists'):console.log('doesnt'))
+    // items.map(obj=>obj.date==currentDate?console.log('exists'):console.log('doesnt'))
     if(marketList.item=="" || marketList.quantity=="" || marketList.price==""){
       setSubmitStatus("Please fill all inputs")
     }else{
