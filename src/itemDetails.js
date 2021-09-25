@@ -13,7 +13,7 @@ function Details (){
         }
         else{
         let id = itemDetails
-        detailedView= <div className="mx-auto col-4 card" style={{marginTop:'70px',padding:'2em'}}>
+        detailedView= <div className="mx-auto col-md-4 card" style={{marginTop:'70px',padding:'2em'}}>
             <p className=" text-center" style={{fontSize:'30px'}}>
                 <Link to="/view" className="fa fa-arrow-left" style={{fontSize:'20px',left:'2em', position:'absolute',color:'black',textDecorationLine:"none"}}></Link>ITEM</p>
             <table className="mx-auto">

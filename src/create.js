@@ -4,7 +4,7 @@ function Create(props){
     let {marketList, saveList,submitList,total,submitStatus} = props;
     return(
         <>
-            <div className="mx-auto col-4 text-center card" style={{marginTop:'40px',padding:'2em',paddingRight:'3em'}}>
+            <div className="mx-auto col-md-4 text-center card" style={{marginTop:'40px',padding:'2em',paddingRight:'3em'}}>
             <p style={{fontSize:'30px'}}>MARKET ITEM</p>
             <p>{submitStatus}</p>
             <form onSubmit={submitList}>

@@ -43,13 +43,13 @@ function View(){
             }
         });
         mappedView = dateList.map((date,indexDate)=>(
-            <div key={indexDate} className="mx-auto col-8 card text-center mt-1 bg-light">
+            <div key={indexDate} className="mx-auto col-md-8 card text-center mt-1 bg-light">
                 <p className="mt-2 row" style={{fontSize:'20px',textAlign:'left'}} role="button" data-target={`#items${indexDate}`} data-toggle="collapse" aria-expanded="false">
                     <b style={{marginLeft:'2em'}}>{date}</b><i className="fa fa-angle-down" style={{position:'absolute',right:'30px',marginTop:'1em'}}></i>
                         {newDates.map(item=>item[0]==date?
                             <><div className="col-4"></div>
-                            <div className="col-2 size15">Bought: {(item[1].filter(itemI=>itemI.status=="bought").length)}</div>
-                            <div className="col-2 size15">Pending: {(item[1].filter(itemI=>itemI.status=="pending").length)}</div>
+                            <div className="col-md-2 size15">Bought: {(item[1].filter(itemI=>itemI.status=="bought").length)}</div>
+                            <div className="col-md-2 size15">Pending: {(item[1].filter(itemI=>itemI.status=="pending").length)}</div>
                             <div className="col-1"></div>
                             </>:<p></p>)}
                         {/* <font style={{fontSize:'15px',marginTop:'1em',textAlign:'right'}}> */}

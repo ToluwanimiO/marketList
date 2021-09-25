@@ -64,7 +64,7 @@ function Edit(){
                 setNewList({item:'',quantity:'',price:'',total:''})
                 setItemStatus({empty:true,pending:false,bought:false})
             }
-            editDisplay=<div className="mx-auto col-4 card" style={{marginTop:'10px',padding:'2em'}}>
+            editDisplay=<div className="mx-auto col-md-4 card" style={{marginTop:'10px',padding:'2em'}}>
             <p className=" text-center" style={{fontSize:'30px'}}><span onClick={goBack} className="fa fa-arrow-left" style={{fontSize:'20px',left:'2em', position:'absolute',color:'black',textDecorationLine:"none"}}></span>EDIT ITEM</p>
             <p className="mx-auto" style={{color:'green'}}>{editStatus}</p>
             <form onSubmit={handleSubmit} className="mx-auto">
